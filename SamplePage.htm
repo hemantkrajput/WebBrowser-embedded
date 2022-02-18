@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+function chooseBackround() {
+if (window.chrome) {
+    document.body.style.background = 'rgba(255,0,255,0)';
+    } else {
+    document.body.style.background = 'rgb(255,0,255)';
+    }
+}
+
+function btn_clicked() {
+    document.getElementById("btn").innerHTML = document.getElementById("btn").innerHTML == "Clicked" ? "Click Me" : "Clicked";
+}
+</script>
+</head>
+<body onload="chooseBackround()" >
+<button id="btn" onclick="btn_clicked()">Click Me</button>
+</body>
+</html>
